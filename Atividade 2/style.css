@@ -1,0 +1,67 @@
+body {
+    margin:0;
+  background-image: url(img/bandeira.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+header{
+    position: ab;
+    font-family: "Arial Black","Times New Roman";
+    font-size: 45px;
+    display: block;
+    color:#b50202;
+    background-color: #b8b8b8
+}
+ul {
+  list-style-type: none;
+  color: #b8b8b8;
+  background-color: #b50202;
+  position: fixed;
+  width: 100%;
+  margin:0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:#4CAF50;
+}
+
+article{
+    position:relative;
+    margin-bottom: 0;
+    background-color: #FFF;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Imgpoints{
+    margin-top:0;
+    border-style: solid;
+    border-width:5px;
+    border-color: #000;
+}
+#A1{
+    margin-top: 45px;
+    
+}
+p{
+    margin: 0;
+    font-family: "Arial";
+    text-align: justify;
+    width: 100%;
+}
