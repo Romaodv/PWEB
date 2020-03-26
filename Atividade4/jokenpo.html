@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<htmllang="pt-br">
+  <head>
+    <metacharset="UTF-8">
+      <title>JOKENPO</title>
+      
+      </head>
+    <body>
+      <form>
+		<button onclick="jogo('pedra')">Pedra</button>
+		<button onclick="jogo('papel')">Papel</button>
+		<button onclick="jogo('tesoura')">Tesoura</button>
+      </form>
+	  
+	  <script>
+	  function jogo(opt) {
+        var optComp = Math.floor(Math.random() * 4);
+		
+		if (optComp == 1){ // 1 é pedra
+			if (opt == 'pedra'){
+				alert("Computador escolheu pedra. Empate!");
+			}else if( opt == 'papel'){
+				alert("Computador escolheu pedra. Você ganhou!");
+			}else{
+				alert("Computador escolheu pedra. Você perdeu!");
+			}
+		}else if (optComp ==2) { // 2 é papel
+			if (opt == 'pedra'){
+				alert("Computador escolheu papel. Você perdeu!");
+			}else if( opt == 'papel'){
+				alert("Computador escolheu papel. Empate!");
+			}else{
+				alert("Computador escolheu papel. Você ganhou!");
+			}
+		}else{
+			if (opt == 'pedra'){ // 3 é tesoura
+				alert("Computador escolheu tesoura. Você ganhou!");
+			}else if( opt == 'papel'){
+				alert("Computador escolheu tesoura. Você perdeu!");
+			}else{
+				alert("Computador escolheu tesoura. Empate!");
+			}
+		
+		}
+		
+		}
+      </script>
+    </body>
+    </html>

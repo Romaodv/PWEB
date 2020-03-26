@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<htmllang="pt-br">
+  <head>
+    <metacharset="UTF-8">
+      <title>Cálculo</title>
+      
+      </head>
+    <body>
+      <form>
+		<label for="fname">Primeiro número:</label><br>
+		<input type="text" id="n1" name="nota1"><br>
+		<label for="lname">Segundo número:</label><br>
+		<input type="text" id="n2" name="nota2">
+		<button onclick="calcula()">Calcular</button>
+      </form>
+	  
+	  <script>
+	  function calcula() {
+        var n1 = parseFloat(document.getElementById("n1").value);
+		var n2 = parseFloat(document.getElementById("n2").value);
+		var soma = n1 + n2;
+		var sub = n1 - n2;
+		var prod = n1 * n2;
+		var div = n1 / 2;
+		var rest = n1 % n2;
+		alert("Soma: " + soma + "\nSubtração: " + sub + "\nProduto: " + prod + "\nDivisão: " + div + "\nResto inteiro: " + rest);
+		}
+      </script>
+    </body>
+    </html>

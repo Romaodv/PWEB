@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<htmllang="pt-br">
+  <head>
+    <metacharset="UTF-8">
+      <title>Notas</title>
+      
+      </head>
+    <body>
+      <form>
+	    <label for="fname">Nome:</label><br>
+		<input type="text" id="name" name="name"><br>
+		<label for="fname">Primeira Nota:</label><br>
+		<input type="text" id="nota1" name="nota1"><br>
+		<label for="lname">Segunda Nota:</label><br>
+		<input type="text" id="nota2" name="nota2">
+		<button onclick="calculaNota()">Calcular</button>
+      </form>
+	  
+	  <script>
+	  function calculaNota() {
+		var name = document.getElementById("name").value;
+        var n1 = parseFloat(document.getElementById("nota1").value);
+		var n2 = parseFloat(document.getElementById("nota2").value);
+		
+		var media = (n1 + n2) / 2;
+		var teste = n1 * 2;
+		alert(name + "\nNota: " + media);
+		}
+      </script>
+    </body>
+    </html>
