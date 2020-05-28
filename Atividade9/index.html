@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+  <input type="text" id="texto"><br>
+  Maiúscula:<input type="checkbox" id="chk1" onclick="mai()"><br>
+  Minúscula:<input type="checkbox" id="chk2" onclick="minus()">
+  <script>
+    function mai(){
+      var texto = document.getElementById("texto").value;
+      document.getElementById("texto").value = texto.toUpperCase();
+      document.getElementById("chk2").checked = false;
+    }
+
+    function minus(){
+      var texto2 = document.getElementById("texto").value;
+      document.getElementById("texto").value = texto2.toLowerCase();
+      document.getElementById("chk1").checked = false;
+    }
+  </script>
+</body>
+</html>
